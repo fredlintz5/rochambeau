@@ -46,7 +46,23 @@ button:hover {
 
 #battleground div {
 	float: left;
-    margin: 30px 0px 20px 85px;
+    margin: 30px 0px 20px 70px;
+}
+
+#player {
+	height: 125px;
+	width: 125px;
+}
+
+#computer {
+	height: 125px;
+	width: 125px;
+}
+
+#vs {
+	line-height: 125px;
+	height: 125px;
+	width: 125px;
 }
 
 #score table {
@@ -70,15 +86,31 @@ table, th, td {
 	}
 
 	#battleground {
-		height: 170px;
+		height: 150px;
 	}
 
 	#battleground div {
-		margin: 25px 5px 20px 35px;
+		margin: 25px 0px 20px 30px;
 	}
 
 	img {
 		height: 65px;
+	}
+
+	#player {
+		height: 65px;
+		width: 65px;
+	}
+
+	#computer {
+		height: 65px;
+		width: 65px;
+	}
+
+	#vs {
+		line-height: 65px;
+		height: 65px;
+		width: 65px;
 	}
 
 	#vs {

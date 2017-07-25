@@ -5,7 +5,6 @@
 	var rock = "<img src='assets/images/rock.png' height='125'>";
 	var paper = "<img src='assets/images/paper.png' height='125'>";
 	var scissor = "<img src='assets/images/scissors.png' height='125'>";
-	var vs = "<h1>VS</h1>";
 	var compArray = [inverseRock, inversePaper, inverseScissor];
 	var humanScore = 0;
 	var compScore = 0;
@@ -20,7 +19,6 @@
 		//in corresponding html ID
 	    var randomNumber = Math.floor((Math.random() * compArray.length));
 		document.getElementById("player").innerHTML = rock;
-	    document.getElementById("vs").innerHTML = vs;
 		document.getElementById("computer").innerHTML = compArray[randomNumber];
 
 			//else if logic to determine who won and lost each hand
@@ -47,7 +45,6 @@
 		//in corresponding html ID
 	    var randomNumber = Math.floor((Math.random() * compArray.length));
 		document.getElementById("player").innerHTML = paper;
-	    document.getElementById("vs").innerHTML = vs;
 		document.getElementById("computer").innerHTML = compArray[randomNumber];
 
 			//else if logic to determine who won and lost each hand
@@ -74,7 +71,6 @@
 		//in corresponding html ID
 	    var randomNumber = Math.floor((Math.random() * compArray.length));
 		document.getElementById("player").innerHTML = scissor;
-	    document.getElementById("vs").innerHTML = vs;
 		document.getElementById("computer").innerHTML = compArray[randomNumber];
 
 			//else if logic to determine who won and lost each hand
