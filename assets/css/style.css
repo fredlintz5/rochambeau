@@ -3,12 +3,20 @@
 }
 
 body {
-	width: 760px;
+	width: 660px;
 	margin: auto;
 	background-color: #333;
 	color: #fff;
 	text-align: center;	
+}
 
+button {
+	padding: 8px;
+	font-size: 1em;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 #header {
@@ -21,26 +29,38 @@ body {
 }
 
 #choose {
-	margin-top: 40px;
+	margin-top: 20px;
 }
 
 #choose button {
-	margin-top: 5px;
-	margin-bottom: 20px;
+	margin: 15px 4px 20px 4px;
 }
 
 #battleground {
 	margin: auto;
+	height: 200px;
 	font-size: 3em;
+	text-align: center;
 }
 
 #battleground div {
 	float: left;
-    margin-right: 40px;
-    margin-left: 80px;
-    margin-top: 10px;
-    line-height: 4;
+    margin: 30px 0px 20px 85px;
 }
+
+#score table {
+	margin: auto;
+	margin-bottom: 15px;
+}
+
+table, th, td {
+	border: 1px solid white;
+	padding: 10px;
+}
+
+
+
+
 
 
 
