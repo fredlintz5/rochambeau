@@ -90,16 +90,20 @@
 
 	});
 
-	//UNable to get anything to work outside of these functions...
+	
+	// function checkScores() {
 
-	// if (compScore === 10) {
-	// 	alert("You Lost!")
-	// 	window.location.href='index.html';
+	// 		if (compScore === 10) {
+	// 			alert("You Lost!")
+	// 			window.location.href='index.html';
 
-	// } else if (humanScore === 10) {
-	// 		alert("You WON!")
-	// 		window.location.href='index.html';
-	// }
+	// 		} else if (humanScore === 10) {
+	// 			alert("You WON!")
+	// 			window.location.href='index.html';
+	// 		}
+	// 	};
+
+	
 
 
 
