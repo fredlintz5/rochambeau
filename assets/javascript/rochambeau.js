@@ -10,16 +10,18 @@
 	var compScore = 0;
 
 	
+	//wait 600ms after the page loads to display Game instruction
+	setTimeout(function () {
+	    alert("Try to beat the Machine, best out of 3 determines the fate of the world. Ties will not be recorded.");
+	}, 700);
 
-
-	//"Listen" for Rock button pressed?
-	document.getElementById("rock").addEventListener("click", function() {
-
+		//"Listen" for Rock button pressed?
+	$('#rock').click(function() {
 		//create random nuber to choose random computer image, display that image
 		//in corresponding html ID
 	    var randomNumber = Math.floor((Math.random() * compArray.length));
-		document.getElementById("player").innerHTML = rock;
-		document.getElementById("computer").innerHTML = compArray[randomNumber];
+		$("#player").html(rock);
+		$("#computer").html(compArray[randomNumber]);
 
 			//else if logic to determine who won and lost each hand
 			if (randomNumber === 0) {
@@ -28,24 +30,29 @@
 
 			else if (randomNumber === 1) {
 				compScore++
-				document.getElementById("compScore").innerHTML = compScore;
+				$("#compScore").html(compScore);
 			}
 
 			else {
 				humanScore++
-				document.getElementById("humanScore").innerHTML = humanScore;
+				$("#humanScore").html(humanScore);
 			}
+
+		//delay checkScore so images can load, and score can update before alerting outcome	
+		setTimeout(function () {
+			checkScores();			
+		}, 500);
 
 	});	
 
 	//"Listen" for paper button pressed?
-	document.getElementById("paper").addEventListener("click", function() {
+	$('#paper').click(function() {
 
 		//create random nuber to choose random computer image, display that image
 		//in corresponding html ID
 	    var randomNumber = Math.floor((Math.random() * compArray.length));
-		document.getElementById("player").innerHTML = paper;
-		document.getElementById("computer").innerHTML = compArray[randomNumber];
+		$("#player").html(paper);
+		$("#computer").html(compArray[randomNumber]);
 
 			//else if logic to determine who won and lost each hand
 			if (randomNumber === 1) {
@@ -54,24 +61,29 @@
 
 			else if (randomNumber === 2) {
 				compScore++
-				document.getElementById("compScore").innerHTML = compScore;
+				$("#compScore").html(compScore);
 			}
 
 			else {
 				humanScore++
-				document.getElementById("humanScore").innerHTML = humanScore;
+				$("#humanScore").html(humanScore);
 			}
+		
+		//delay checkScore so images can load, and score can update before alerting outcome	
+		setTimeout(function () {
+			checkScores();			
+		}, 500);
 
 	});
 
 	//"Listen" for scissor button pressed?
-	document.getElementById("scissor").addEventListener("click", function() {
+	$('#scissor').click(function() {
 
 		//create random nuber to choose random computer image, display that image
 		//in corresponding html ID
 	    var randomNumber = Math.floor((Math.random() * compArray.length));
-		document.getElementById("player").innerHTML = scissor;
-		document.getElementById("computer").innerHTML = compArray[randomNumber];
+		$("#player").html(scissor);
+		$("#computer").html(compArray[randomNumber]);
 
 			//else if logic to determine who won and lost each hand
 			if (randomNumber === 2) {
@@ -80,28 +92,31 @@
 
 			else if (randomNumber === 0) {
 				compScore++
-				document.getElementById("compScore").innerHTML = compScore;
+				$("#compScore").html(compScore);
 			}
 
 			else {
 				humanScore++
-				document.getElementById("humanScore").innerHTML = humanScore;
+				$("#humanScore").html(humanScore);
 			}
+
+		//delay checkScore so images can load, and score can update before alerting outcome	
+		setTimeout(function () {
+			checkScores();			
+		}, 500);
 
 	});
 
 	
-	// function checkScores() {
+	function checkScores() {
 
-	// 		if (compScore === 10) {
-	// 			alert("You Lost!")
-	// 			window.location.href='index.html';
+			if (compScore === 3) {
+				alert("You Lost! May God have mercy on our souls... Refresh Page for New Game")
 
-	// 		} else if (humanScore === 10) {
-	// 			alert("You WON!")
-	// 			window.location.href='index.html';
-	// 		}
-	// 	};
+			} else if (humanScore === 3) {
+				alert("You WON! Thank you Chuck Norris! Refresh Page for New Game")
+			}
+		};
 
 	
 
