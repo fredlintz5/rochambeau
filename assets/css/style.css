@@ -1,35 +1,13 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	width: 660px;
-	margin: auto;
-	background-color: #333;
-	color: #fff;
-	text-align: center;	
+.container {
+	background-image: url("http://cinevenger.com/wp-content/uploads/2012/03/vlcsnap-2012-03-15-20h51m15s202.png");
+	background-size: cover;
+	color: #eeeeee;
 }
 
 button {
 	padding: 8px;
 	font-size: 1em;
-}
-
-button:hover {
-	cursor: pointer;
-}
-
-#header {
-	width: 100%;
-}
-
-#header h1 {
-	font-size: 3em;
-	margin-top: 30px;
-}
-
-#choose {
-	margin-top: 20px;
+	color: #333;
 }
 
 #choose button {
@@ -37,32 +15,20 @@ button:hover {
 	margin: 15px 4px 20px 4px;
 }
 
-#battleground {
-	margin: auto;
-	height: 200px;
-	font-size: 3em;
-	text-align: center;
-}
-
-#battleground div {
-	float: left;
-    margin: 30px 0px 20px 70px;
-}
-
-#player {
-	height: 125px;
-	width: 125px;
-}
-
-#computer {
-	height: 125px;
-	width: 125px;
-}
-
 #vs {
 	line-height: 125px;
-	height: 125px;
-	width: 125px;
+}
+
+#battleground {
+	height: 200px;
+	padding-top: 30px;
+	display: inherit;
+}
+
+#hidden {
+	display: none;
+	padding-top: 30px;
+	height: 200px;
 }
 
 #score table {
@@ -71,56 +37,9 @@ button:hover {
 }
 
 table, th, td {
-	border: 1px solid white;
+	text-align: center;
+	border: 1px solid #eee;
 	padding: 10px;
-}
-
-@media only screen and (max-width: 540px) {
-
-	body {
-		width: 320px; 
-	}
-
-	#header h1 {
-		font-size: 2em;
-	}
-
-	#battleground {
-		height: 150px;
-	}
-
-	#battleground div {
-		margin: 25px 0px 20px 30px;
-	}
-
-	img {
-		height: 65px;
-	}
-
-	#player {
-		height: 65px;
-		width: 65px;
-	}
-
-	#computer {
-		height: 65px;
-		width: 65px;
-	}
-
-	#vs {
-		line-height: 65px;
-		height: 65px;
-		width: 65px;
-	}
-
-	#vs {
-		font-size: .8em;
-	}
-
-	#choose button {
-		width: 85px;
-	}
-
 }
 
 
